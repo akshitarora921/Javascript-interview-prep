@@ -1,4 +1,5 @@
 //Debouncing
+// It means that in the search bar example, the user can type all the four letters. Still, only x milliseconds after the last onPress() call was triggered, the function executes.
 var normalInput = document.querySelector('#normalInput');
 var debounceInput = document.querySelector('#debounceInput');
 normalInput.addEventListener('input',majorfunction)
@@ -15,6 +16,4 @@ function debounceWrapper(callback, delay=300){
   }
 }
 
-var debouceHandleChange = debounceWrapper(majorfunction)
-
-debounceInput.addEventListener('input',debouceHandleChange)
+debounceInput.addEventListener('input',debounceWrapper(majorfunction))
