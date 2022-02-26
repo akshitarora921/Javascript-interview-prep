@@ -18,3 +18,13 @@ var myFunction = welcome("John");
 myFunction("Welcome Mr. ");
 
 // As per the above code, the inner function(i.e, greetingInfo) has access to the variables in the outer function scope(i.e, Welcome) even after the outer function has returned.
+
+function addValue(a) {
+  return(b)=> {
+    console.log(a+b);
+  };
+}
+
+var add10 = addValue(10);
+
+add10(20);
