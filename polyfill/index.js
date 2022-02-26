@@ -52,7 +52,11 @@ console.log(arr.myFilter((element)=>element%2==0))
 Array.prototype.myReduce=function(callBack,intialValue){
   let accumulator=intialValue ;
   for(let i=0;i<this.length;i++){
+   if(accumulator){
     accumulator=callBack(accumulator,this[i],i,this)
+   }else{
+     accumulator=this[i]
+   }
   }
   return accumulator
 }
