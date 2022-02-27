@@ -8,7 +8,7 @@
 
 // trickle down, bubble up
 
-// addEventListener(event-name,callback function, useCapture=false)
+// addEventListener(event-name,callback function, isCapture=false)
 // event.stopPropagation(); to stop event to pass further down or up
 
 var grandparent = document.querySelector("#grandparent");
