@@ -3,7 +3,7 @@
 // Closure is a combination of function and its lexical enviroment within which the function is declared.
 // Closure has 3 Scope chains:
 // 1. Own scope variables defined b/w its curly braces
-// 2. Outer function scope variabl
+// 2. Outer function scope variable
 // 3. Global varibles
 
 function welcome(name) {
